@@ -1,0 +1,23 @@
+.global-navigation {
+	@media (max-width: 768px) {
+		display: none;
+	}
+
+	.global-navigation__list {
+		margin-left: #{(20 / $font-size-num)}rem;
+		display: inline-block;
+	}
+
+	.global-navigation__link {
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		color: $font-color;
+	}
+
+	.global-navigation__sub-text {
+		display: block;
+		font-size: #{(12 / $font-size-num)}rem;
+		letter-spacing: .25em;
+	}
+}

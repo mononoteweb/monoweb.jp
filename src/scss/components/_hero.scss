@@ -1,0 +1,7 @@
+.hero {
+	height: 100vh;
+	background: #141414;
+	padding: #{(20 / $font-size-num)}rem;
+	color: #fff;
+	overflow: hidden;
+}

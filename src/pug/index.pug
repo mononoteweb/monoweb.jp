@@ -1,0 +1,107 @@
+doctype
+html.no-js(lang="ja" itemscope itemtype="http://schema.org/WebPage")
+	head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#")
+		meta(charset="utf-8")
+		meta(http-equiv="x-ua-compatible" content="ie=edge")
+		meta(content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" name="viewport")
+		title PAGE_TITLE | SITE_NAME
+		meta(property="og:title" content="PAGE_TITLE | SITE_NAME")
+		meta(name="twitter:title" content="PAGE_TITLE | SITE_NAME")
+
+		link(rel="canonical" href="")
+		meta(property="og:url" content="")
+		meta(name="twitter:url" content="")
+
+		meta(name="description" content="")
+		meta(property="og:description" content="")
+		meta(name="twitter:description" content="")
+
+		meta(property="og:image" content="")
+		meta(name="twitter:image" content="")
+
+		meta(name="format-detection" content="telephone=no")
+
+		link(href="/common/css/style.css" rel="stylesheet")
+		script(src="//webfont.fontplus.jp/accessor/script/fontplus.js?nDvIumvdd-Q%3D" charset="utf-8")
+
+	body
+		noscript
+		.page-wrapper
+			header.site-header
+				.site-header__logo-container: a(href="")
+					.site-header__logo: h1
+						img(src="/common/img/resources/site-logo.svg" alt="monoweb.jp")
+					.site-header__sub-text: p フリーランス Webフロントエンドエンジニア
+				nav.global-navigation
+					ul
+						li.global-navigation__list
+							a.global-navigation__link(href="")
+								span.global-navigation__main-text 私について
+								span.global-navigation__sub-text who am I
+						li.global-navigation__list
+							a.global-navigation__link(href="")
+								span.global-navigation__main-text 制作実績
+								span.global-navigation__sub-text works
+						li.global-navigation__list
+							a.global-navigation__link(href="")
+								span.global-navigation__main-text お問い合わせ
+								span.global-navigation__sub-text contacts
+			.hero
+				pre
+					| &lt;html lang="ja"&gt;
+					| &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;
+					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;
+					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;monoweb.jp&lt;/title&gt;
+					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="description" content="フリーランス Webフロントエンドエンジニア"&gt;
+					| &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
+					| &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
+					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・
+					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・
+					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・
+					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+			.layout-wrapper
+				.content-wrapper
+					main
+						section
+							h2 私について
+						section
+							h2 制作実績
+						section
+							.el-heading-lv2
+								h2.el-heading-lv2__main-text お問い合わせ
+								p.el-heading-lv2__sub-text contacts
+							form.el-inquiry
+								.el-inquiry__container
+									.el-inquiry__title
+										label(for="name") お名前
+									.el-inquiry__input
+										input#name
+								.el-inquiry__container
+									.el-inquiry__title
+										label(for="email") メールアドレス
+										span.required 必須
+									.el-inquiry__input
+										input#email(type="email" required)
+								.el-inquiry__container
+									.el-inquiry__title
+										label(for="category") 用件
+									.el-inquiry__select
+										select#category
+											option(disabled selected) 選択してください
+											option 制作実績について
+											option 制作依頼について
+								.el-inquiry__container
+									.el-inquiry__title
+										label(for="inquiry") ご用件
+										span.required 必須
+									.el-inquiry__input
+										textarea#inquiry(required)
+								.el-inquiry__submit
+									button.el-inquiry__btn: span 送信
+
+
+
+			footer.site-footer
+				p
+					small &copy; 2018 monoweb.jp
+		script(src="/common/js/main.bundle.js")

@@ -1,0 +1,59 @@
+{
+	"name": "frontendbox",
+	"version": "1.0.0",
+	"main": "src/ts/main.ts",
+	"config": {
+		"scss_dir": "./src/scss"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint:html": "htmllint public/**/*.html",
+		"watch:lint:html": "watch 'npm run lint:html'",
+		"lint:sass": "sass-lint -c .sass-lint.yml './src/scss/**/*.scss' -v -q",
+		"watch": "npm-run-all -p watch:server watch:pug watch:lint:html watch:lint:sass watch:sass build:css watch:script",
+		"watch:lint:sass": "watch 'npm run lint:sass' $npm_package_config_scss_dir",
+		"watch:sass": "node-sass --include-path scss ./src/scss/style.scss ./src/css/style.css -w",
+		"build:css": "postcss src/css --dir public/common/css -w",
+		"watch:pug": "pug src/pug/ -o public -w",
+		"watch:server": "browser-sync start --config bs-config.js",
+		"watch:script": "webpack -w",
+		"release": "NODE_ENV=production npm-run-all -p release:css release:script",
+		"release:css": "npm-run-all -p release:css1 release:css2",
+		"release:css1": "mqpacker public/common/css/style.css public/common/css/style.css",
+		"release:css2": "cleancss -o public/common/css/style.css public/common/css/style.css",
+		"release:script": "webpack --mode 'production'"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": ""
+	},
+	"homepage": "",
+	"description": "",
+	"devDependencies": {
+		"autoprefixer": "^8.1.0",
+		"browser-sync": "^2.23.6",
+		"clean-css": "^4.1.11",
+		"clean-css-cli": "^4.1.11",
+		"css-mqpacker": "^6.0.2",
+		"htmllint-cli": "0.0.6",
+		"node-sass": "^4.7.2",
+		"npm-run-all": "^4.1.2",
+		"postcss": "^6.0.20",
+		"postcss-cli": "^5.0.0",
+		"sass-lint": "^1.12.1",
+		"ts-loader": "^4.1.0",
+		"typescript": "^2.7.2",
+		"watch": "^1.0.2",
+		"webpack": "^4.1.1",
+		"webpack-cli": "^2.0.12"
+	},
+	"dependencies": {
+		"pug": "^2.0.1",
+		"pug-cli": "^1.0.0-alpha6"
+	}
+}

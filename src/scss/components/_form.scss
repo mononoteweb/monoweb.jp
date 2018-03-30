@@ -1,0 +1,71 @@
+.el-inquiry__container {
+	margin: 0 auto #{(20 / $font-size-num)}rem;
+	padding: 0 #{(20 / $font-size-num)}rem;
+	max-width: 640px;
+
+	.required {
+		margin-left: #{(5 / $font-size-num)}rem;
+		border-radius: 3px;
+		display: inline-block;
+		padding: #{(3 / $font-size-num)}rem #{(5 / $font-size-num)}rem #{(1 / $font-size-num)}rem;
+		font-size: #{(12 / $font-size-num)}rem;
+		border: 1px solid $primary-color;
+		color: $primary-color;
+		line-height: 1;
+	}
+}
+
+.el-inquiry__input {
+	input,
+	textarea {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		border: 1px solid $font-color;
+		color: $font-color;
+		padding: #{(10 / $font-size-num)}rem;
+		font-size: #{(16 / $font-size-num)}rem;
+	}
+
+	textarea {
+		height: 250px;
+	}
+}
+
+.el-inquiry__select {
+	select {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		border: 1px solid $font-color;
+		color: $font-color;
+		padding: #{(10 / $font-size-num)}rem;
+		font-size: #{(16 / $font-size-num)}rem;
+		background: transparent;
+		appearance: none;
+		border-radius: 0;
+	}
+}
+
+.el-inquiry__submit {
+	margin: #{(40 / $font-size-num)}rem auto 0;
+	max-width: 440px;
+	padding: 0 #{(20 / $font-size-num)}rem;
+
+	.el-inquiry__btn {
+		display: block;
+		padding: #{(20 / $font-size-num)}rem;
+		width: 100%;
+		background: transparent;
+		border: 1px solid $primary-color;
+		color: $primary-color;
+		font-size: #{(18 / $font-size-num)}rem;
+		letter-spacing: .22em;
+
+		&:hover {
+			cursor: pointer;
+			background: $primary-color;
+			color: #fff;
+		}
+	}
+}

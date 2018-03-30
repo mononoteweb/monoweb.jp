@@ -1,0 +1,129 @@
+html {
+  color: #333;
+  font: 16px/1.72 -apple-system, BlinkMacSystemFont, "Helvetica Neue", "FP-HiraKakuProN-W4", Verdana, Meiryo, "M+ 1p", sans-serif; }
+
+body {
+  margin: 0; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.site-header {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .site-header .site-header__logo-container {
+    text-align: center; }
+    .site-header .site-header__logo-container a {
+      text-decoration: none;
+      color: #333; }
+  .site-header .site-header__logo h1 {
+    line-height: 1.2;
+    margin: 0; }
+  .site-header .site-header__sub-text {
+    font-size: 0.75rem;
+    letter-spacing: .212em; }
+    .site-header .site-header__sub-text p {
+      margin: 0; }
+
+@media (max-width: 768px) {
+  .global-navigation {
+    display: none; } }
+
+.global-navigation .global-navigation__list {
+  margin-left: 1.25rem;
+  display: inline-block; }
+
+.global-navigation .global-navigation__link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #333; }
+
+.global-navigation .global-navigation__sub-text {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: .25em; }
+
+.hero {
+  height: 100vh;
+  background: #141414;
+  padding: 1.25rem;
+  color: #fff;
+  overflow: hidden; }
+
+.el-heading-lv2 {
+  margin: 6.25rem auto 1.875rem;
+  text-align: center; }
+  .el-heading-lv2 .el-heading-lv2__main-text {
+    margin: 0;
+    font-family: 'FP-HiraKakuProN-W6';
+    font-weight: 700; }
+  .el-heading-lv2 .el-heading-lv2__sub-text {
+    margin: 0;
+    letter-spacing: .25em; }
+
+.el-inquiry__container {
+  margin: 0 auto 1.25rem;
+  padding: 0 1.25rem;
+  max-width: 640px; }
+  .el-inquiry__container .required {
+    margin-left: 0.3125rem;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 0.1875rem 0.3125rem 0.0625rem;
+    font-size: 0.75rem;
+    border: 1px solid #603;
+    color: #603;
+    line-height: 1; }
+
+.el-inquiry__input input,
+.el-inquiry__input textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 1px solid #333;
+  color: #333;
+  padding: 0.625rem;
+  font-size: 1rem; }
+
+.el-inquiry__input textarea {
+  height: 250px; }
+
+.el-inquiry__select select {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 1px solid #333;
+  color: #333;
+  padding: 0.625rem;
+  font-size: 1rem;
+  background: transparent;
+  appearance: none;
+  border-radius: 0; }
+
+.el-inquiry__submit {
+  margin: 2.5rem auto 0;
+  max-width: 440px;
+  padding: 0 1.25rem; }
+  .el-inquiry__submit .el-inquiry__btn {
+    display: block;
+    padding: 1.25rem;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #603;
+    color: #603;
+    font-size: 1.125rem;
+    letter-spacing: .22em; }
+    .el-inquiry__submit .el-inquiry__btn:hover {
+      cursor: pointer;
+      background: #603;
+      color: #fff; }
+
+.site-footer {
+  padding: 1.25rem;
+  text-align: center; }

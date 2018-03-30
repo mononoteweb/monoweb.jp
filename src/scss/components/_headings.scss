@@ -1,0 +1,15 @@
+.el-heading-lv2 {
+	margin: #{(100 / $font-size-num)}rem auto #{(30 / $font-size-num)}rem;
+	text-align: center;
+
+	.el-heading-lv2__main-text {
+		margin: 0;
+		font-family: 'FP-HiraKakuProN-W6';
+		font-weight: 700;
+	}
+
+	.el-heading-lv2__sub-text {
+		margin: 0;
+		letter-spacing: .25em;
+	}
+}

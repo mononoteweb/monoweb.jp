@@ -1,0 +1,31 @@
+.site-header {
+	padding: #{(20 / $font-size-num)}rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.site-header__logo-container {
+		text-align: center;
+
+		a {
+			text-decoration: none;
+			color: $font-color;
+		}
+	}
+
+	.site-header__logo {
+		h1 {
+			line-height: 1.2;
+			margin: 0;
+		}
+	}
+
+	.site-header__sub-text {
+		font-size: #{(12 / $font-size-num)}rem;
+		letter-spacing: .212em;
+
+		p {
+			margin: 0;
+		}
+	}
+}

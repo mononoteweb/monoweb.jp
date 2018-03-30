@@ -1,0 +1,12 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+#html file Text editor Config.
+[*.*]
+end_of_line = lf
+indent_style = tab
+tab_width = 4
+trim_trailing_whitespace = true
+insert_final_newline = false
