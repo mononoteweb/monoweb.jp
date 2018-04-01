@@ -1,7 +1,7 @@
 module.exports = {
 	mode: 'development',
 	entry: {
-		'main': './src/ts/main.ts'
+		'main': './src/tsx/main.tsx'
 	},
 	output: {
 		path: __dirname + '/public/common/js',
@@ -10,7 +10,7 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				test: /\.ts$/,
+				test: /\.tsx$/,
 				use: 'ts-loader'
 			}
 		]
@@ -18,7 +18,7 @@ module.exports = {
 	plugins: [],
 	resolve: {
 		extensions: [
-			'.ts'
+			'.ts', '.tsx', '.js', '.json'
 		]
 	}
 };

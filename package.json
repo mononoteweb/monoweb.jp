@@ -1,16 +1,17 @@
 {
 	"name": "frontendbox",
 	"version": "1.0.0",
-	"main": "src/ts/main.ts",
+	"main": "src/ts/main.tsx",
 	"config": {
 		"scss_dir": "./src/scss"
 	},
 	"scripts": {
+		"start": "",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint:html": "htmllint public/**/*.html",
 		"watch:lint:html": "watch 'npm run lint:html'",
 		"lint:sass": "sass-lint -c .sass-lint.yml './src/scss/**/*.scss' -v -q",
-		"watch": "npm-run-all -p watch:server watch:pug watch:lint:html watch:lint:sass watch:sass build:css watch:script",
+		"watch": "npm-run-all -p watch:server watch:pug watch:lint:sass watch:sass build:css watch:script",
 		"watch:lint:sass": "watch 'npm run lint:sass' $npm_package_config_scss_dir",
 		"watch:sass": "node-sass --include-path scss ./src/scss/style.scss ./src/css/style.css -w",
 		"build:css": "postcss src/css --dir public/common/css -w",
@@ -35,6 +36,8 @@
 	"homepage": "",
 	"description": "",
 	"devDependencies": {
+		"@types/react": "^16.1.0",
+		"@types/react-dom": "^16.0.4",
 		"autoprefixer": "^8.1.0",
 		"browser-sync": "^2.23.6",
 		"clean-css": "^4.1.11",
@@ -45,6 +48,8 @@
 		"npm-run-all": "^4.1.2",
 		"postcss": "^6.0.20",
 		"postcss-cli": "^5.0.0",
+		"react": "^16.3.0",
+		"react-dom": "^16.3.0",
 		"sass-lint": "^1.12.1",
 		"ts-loader": "^4.1.0",
 		"typescript": "^2.7.2",

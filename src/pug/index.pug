@@ -35,39 +35,46 @@ html.no-js(lang="ja" itemscope itemtype="http://schema.org/WebPage")
 				nav.global-navigation
 					ul
 						li.global-navigation__list
-							a.global-navigation__link(href="")
+							a.global-navigation__link(href="#whoami")
 								span.global-navigation__main-text 私について
 								span.global-navigation__sub-text who am I
 						li.global-navigation__list
-							a.global-navigation__link(href="")
+							a.global-navigation__link(href="#works")
 								span.global-navigation__main-text 制作実績
 								span.global-navigation__sub-text works
 						li.global-navigation__list
-							a.global-navigation__link(href="")
+							a.global-navigation__link(href="#contacts")
 								span.global-navigation__main-text お問い合わせ
 								span.global-navigation__sub-text contacts
-			.hero
-				pre
-					| &lt;html lang="ja"&gt;
-					| &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;
-					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="utf-8"&gt;
-					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;monoweb.jp&lt;/title&gt;
-					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="description" content="フリーランス Webフロントエンドエンジニア"&gt;
-					| &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;
-					| &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;
-					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・
-					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・
-					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;・
-					| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+			#hero.hero
 			.layout-wrapper
 				.content-wrapper
 					main
 						section
-							h2 私について
+							.el-heading-lv2#whoami
+								h2.el-heading-lv2__main-text 私について
+								p.el-heading-lv2__sub-text who am I
+							.el-paragrpah.align-center
+								p
+									| 都内に住むフリーランスのフロントエンドエンジニア。
+							.el-heading-lv3
+								h3.el-heading-lv3__main-text 受けているお仕事
+							.ly-clm-3
+
+								ul
+									li ロゴデザイン。
+									li Webデザイン。
+									li Webサイトテンプレート作成。
+									li WordpressやMovable Typeを用いたCMSへの組み込み。
+							.el-heading-lv3
+								h3.el-heading-lv3__main-text 受けていないお仕事
+
 						section
-							h2 制作実績
+							.el-heading-lv2#works
+								h2.el-heading-lv2__main-text 制作実績
+								p.el-heading-lv2__sub-text works
 						section
-							.el-heading-lv2
+							.el-heading-lv2#contacts
 								h2.el-heading-lv2__main-text お問い合わせ
 								p.el-heading-lv2__sub-text contacts
 							form.el-inquiry
